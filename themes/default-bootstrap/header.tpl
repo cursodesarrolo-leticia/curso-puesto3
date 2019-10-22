@@ -92,6 +92,9 @@
 					{capture name='displayNav'}{hook h='displayNav'}{/capture}
 					{if $smarty.capture.displayNav}
 						<div class="nav">
+							<div id="promo-envio">
+								· ENVÍO 24/48H GRATIS A PARTIR DE 39€*
+							</div>
 							<div class="container">
 								<div class="row">
 									<nav>{$smarty.capture.displayNav}</nav>

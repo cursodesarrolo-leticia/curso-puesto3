@@ -2,4 +2,15 @@
   padding-top: 25px; }
 
 /*# sourceMappingURL=blocktopmenu.css.map */
-/*1233256*/
+#promo-bar {
+  background-color: #060606;
+  padding: 4px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Century Gothic", "Muli", "Helvetica", Arial, Helvetica, Tahoma, sans-serif;
+}
+
+#promo-bar * {
+  color: #fbeded
+}
