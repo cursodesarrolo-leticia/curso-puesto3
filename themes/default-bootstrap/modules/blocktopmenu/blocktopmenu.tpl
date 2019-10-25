@@ -17,11 +17,11 @@
 				</li>
 			{/if}
 		</ul>
-	</div>
-	<div id="promo-bar">
+	</div> 
+	<!--<div id="promo-bar">
 		<div class="container"> 
 			<a href=""> Nueva Colección:  BLACK IS BACK  &gt; Este otoño, apuesta todo al negro</a>
 		</div>
-	</div>
+	</div>-->
 	<!--/ Menu -->
 {/if}

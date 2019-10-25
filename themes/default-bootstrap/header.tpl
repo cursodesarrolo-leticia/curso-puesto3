@@ -116,10 +116,9 @@
 							</div>
 						</div>
 					</div>
-
 					<div id="promo-bar">
 						<div class="container"> 
-							<a href="/tienda/black/"> Nueva Colección:  BLACK IS BACK  &gt; Este otoño, apuesta todo al negro</a>
+							<a href="/tienda/black/">Nueva Colección:  BLACK IS BACK  &gt; Este otoño, apuesta todo al negro</a>
 						</div>
 					</div>
 				</header>
