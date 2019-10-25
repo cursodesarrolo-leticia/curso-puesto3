@@ -92,11 +92,12 @@
 					{capture name='displayNav'}{hook h='displayNav'}{/capture}
 					{if $smarty.capture.displayNav}
 						<div class="nav">
-							<div id="promo-envio">
-								· ENVÍO 24/48H GRATIS A PARTIR DE 39€*
-							</div>
 							<div class="container">
 								<div class="row">
+									<div id="envio-gratis">
+										<i class="element-i" aria-hidden="true"></i>
+										· ENVÍO 24/48H GRATIS A PARTIR DE 39€*									
+									</div> 
 									<nav>{$smarty.capture.displayNav}</nav>
 								</div>
 							</div>
@@ -105,6 +106,7 @@
 					<div>
 						<div class="container">
 							<div class="row">
+							
 								<div id="header_logo">
 									<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
 										<img class="logo img-responsive" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height}"{/if}/>
@@ -112,6 +114,12 @@
 								</div>
 								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 							</div>
+						</div>
+					</div>
+
+					<div id="promo-bar">
+						<div class="container"> 
+							<a href="/tienda/black/"> Nueva Colección:  BLACK IS BACK  &gt; Este otoño, apuesta todo al negro</a>
 						</div>
 					</div>
 				</header>

@@ -6,9 +6,10 @@
   background-color: #060606;
   padding: 4px;
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 20px;
   font-family: "Century Gothic", "Muli", "Helvetica", Arial, Helvetica, Tahoma, sans-serif;
+  text-align: center;
 }
 
 #promo-bar * {
