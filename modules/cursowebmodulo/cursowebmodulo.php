@@ -59,7 +59,7 @@ class Cursowebmodulo extends Module
      */
     public function install()
     {
-        Configuration::updateValue('CURSOWEBMODULO_LIVE_MODE', false);
+        Configuration::updateValue('CURSOWEBMODULO_LIVE_MODE', true);
 
         return parent::install() &&
             $this->registerHook('header') &&
@@ -180,7 +180,7 @@ class Cursowebmodulo extends Module
     protected function getConfigFormValues()
     {
         return array(
-            'CURSOWEBMODULO_LIVE_MODE' => Configuration::get('CURSOWEBMODULO_LIVE_MODE', true),
+            'CURSOWEBMODULO_LIVE_MODE' => Configuration::get('CURSOWEBMODULO_LIVE_MODE',true  ),
             'CURSOWEBMODULO_ACCOUNT_EMAIL' => Configuration::get('CURSOWEBMODULO_ACCOUNT_EMAIL', 'contact@prestashop.com'),
             'CURSOWEBMODULO_ACCOUNT_PASSWORD' => Configuration::get('CURSOWEBMODULO_ACCOUNT_PASSWORD', null),
         );
@@ -220,11 +220,12 @@ class Cursowebmodulo extends Module
 
     public function hookDisplayBackOfficeHeader()
     {
-        /* Place your code here. */
+        return $this->display(__FILE__, 'moduloprueba.tpl');
+       //return ("holi");
     }
 
     public function hookDisplayHeader()
     {
-        /* Place your code here. */
+
     }
 }
