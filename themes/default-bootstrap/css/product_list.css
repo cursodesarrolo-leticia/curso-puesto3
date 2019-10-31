@@ -3,16 +3,15 @@ Product list Styles
 ********************************************************/
 
 ul.product_list .product-name {
-  display: inline-block;
-  width: 100%;
-  overflow: hidden;
-  color: #000000;
-  font-weight: 700;
-  max-height: 15px;
-  font-family: "Century Gothic";
-  margin-bottom: -5%;
-  font-size: 9px;
-  letter-spacing: .2em! important;
+    display: inline-block;
+    max-height: 15px;
+    color:#000000;
+    display: inline;
+    font-family: "Century Gothic", Muli, Helvetica, Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 8px;
+    letter-spacing: .2em! important;
+    line-height: 2px;
+
  }
   
 ul.product_list .availability span {

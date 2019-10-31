@@ -33,10 +33,12 @@
 			<span class="navigation_page">
 				{$path|@replace:'</a>': '</span> </a></span>'}
 			</span>
+			
 		{else}
 			{$path}
 		{/if}
 	{/if}
+	<div id="breadcrumb-line"></div>
 </div>
 {if isset($smarty.get.search_query) && isset($smarty.get.results) && $smarty.get.results > 1 && isset($smarty.server.HTTP_REFERER)}
 <div class="pull-right">

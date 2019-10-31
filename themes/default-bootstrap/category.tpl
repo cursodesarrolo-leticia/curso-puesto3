@@ -26,10 +26,10 @@
 {if isset($category)}
 	{if $category->id AND $category->active}
     	{if $scenes || $category->description || $category->id_image}
-			<div class="content_scene_cat">
+			s<div class="content_scene_cat">
             	 {if $scenes}
                  	<div class="content_scene">
-                        <!-- Scenes -->
+                       <!-- Scenes -->
                         {include file="$tpl_dir./scenes.tpl" scenes=$scenes}
                         {if $category->description}
                             <div class="cat_desc rte">
@@ -44,7 +44,7 @@
                         {/if}
                     </div>
 				{else}
-                    <!-- Category image -->
+                   <!-- <Category image -->
                     <div class="content_scene_cat_bg"{if $category->id_image} style="background:url({$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}) right center no-repeat; background-size:cover; min-height:{$categorySize.height}px;"{/if}>
                         {if $category->description}
                             <div class="cat_desc">
@@ -73,7 +73,7 @@
 		{if isset($subcategories)}
         {if (isset($display_subcategories) && $display_subcategories eq 1) || !isset($display_subcategories) }
 		<!-- Subcategories -->
-		<div id="subcategories">
+		<!--div id="subcategories">
 			<p class="subcategory-heading">{l s='Subcategories'}</p>
 			<ul class="clearfix">
 			{foreach from=$subcategories item=subcategory}
@@ -94,20 +94,10 @@
 				</li>
 			{/foreach}
 			</ul>
-		</div>
+		</div>-->
         {/if}
 		{/if}
 		{if $products}
-			<!--<div class="content_sortPagiBar clearfix">
-            	<div class="sortPagiBar clearfix">
-            		{include file="./product-sort.tpl"}
-                	{include file="./nbr-product-page.tpl"}
-				</div>
-              <div class="top-pagination-content clearfix">
-                	{include file="./product-compare.tpl"}
-					{include file="$tpl_dir./pagination.tpl"}
-                </div>
-			</div>-->
 			{include file="./product-list.tpl" products=$products}
 			<div class="content_sortPagiBar">
 				<div class="bottom-pagination-content clearfix">
