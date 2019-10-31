@@ -2,10 +2,10 @@
 	<!-- Menu -->
 	<div id="block_top_menu" class="sf-contener clearfix col-lg-12">
 		<div class="cat-title">{l s="Menu" mod="blocktopmenu"}</div>
-		<ul class="sf-menu clearfix menu-content">
+		<ul style="list-style-type: none;text-align: center;">
 			{$MENU}
 			{if $MENU_SEARCH}
-				<li class="sf-search noBack" style="float:right">
+				<li class="sf-search noBack col-sm-2 col-xs-12" style="float:right">
 					<form id="searchbox" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="get">
 						<p>
 							<input type="hidden" name="controller" value="search" />
@@ -18,10 +18,5 @@
 			{/if}
 		</ul>
 	</div> 
-	<!--<div id="promo-bar">
-		<div class="container"> 
-			<a href=""> Nueva Colección:  BLACK IS BACK  &gt; Este otoño, apuesta todo al negro</a>
-		</div>
-	</div>-->
 	<!--/ Menu -->
 {/if}
